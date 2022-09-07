@@ -1,4 +1,4 @@
-$Datamaster = ".\TestData.CSV"
+$Datamaster = "Name of CSV File"
 $GetDataMaster = Import-Csv -path $Datamaster
 $GetDataEmployee = $GetDataMaster | Where-object {$_.CurrentEmployee -EQ "Y"}
 $GetDataTemp = $GetDataMaster | Where-Object {$_.CurrentEmployee -EQ "Temp"}
